@@ -24,7 +24,7 @@
               <h1>stickUp</h1>
               <h3>a jQuery plugin</h4>
               <p>A simple plugin that <i>"sticks"</i> an element to the top of the browser window while scrolling past it, always keeping it in view.  This plugin works on multi-page sites, but has additional features for one-pager layouts.</p>
-              <p><a class="btn btn-large btn-success" href="http://github.com/LiranCohen/stickUp"><b>Visit GitHub</b></a></p>
+              <p><a class="btn btn-large btn-success" id="visitGitHubBtn" href="http://github.com/LiranCohen/stickUp"><b>Visit GitHub</b></a></p>
             </div>
           </div>
         </div>
@@ -338,7 +338,7 @@
 
     <!-- ### IMPORTANT ### stickUp javascript file -->
     <!-- ######################################### --> 
-    <script src="js/stickUp.min.js"></script>
+    <script src="js/stickUp.js"></script>
     <!-- ######################################### -->
 
     <!-- ### IMPORTANT ### stickUp options in use -->
@@ -359,8 +359,11 @@
                         },
                         itemClass: 'menuItem',
                         itemHover: 'active',
-                        topMargin: 'auto'
+                        topMargin: 'auto',
+                        fixTopVal: '50px'
                       });
+
+          $('#visitGitHubBtn').stickUp();
         });
       });
     </script>
